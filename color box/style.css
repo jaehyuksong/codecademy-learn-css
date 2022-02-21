@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(190, 184, 184);
+  height: 150vh;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.color-box {
+  display: flex;
+  background-color: white;
+  width: 150px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  display: flex;
+  margin: 50px 20px;
+  justify-content: space-evenly;
+}
+
+.color-select {
+  width: 140px;
+  height: 190px;
+}
+
+.first-box {
+  background-color: tomato;
+}
+.second-box {
+  background-color: teal;
+}
+.third-box {
+  background-color: burlywood;
+}
+.fourth-box {
+  background-color: thistle;
+}
+
+.text {
+  background-color: white;
+  position: relative; 
+  top: 20px;
+}
