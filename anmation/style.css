@@ -1,0 +1,76 @@
+body {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  animation: bigSmall 3s infinite ;
+}
+
+.first-line {
+  display: flex;
+  justify-content: center;
+  transform: rotate(180deg);
+  animation: dotSpin 1s infinite;
+}
+.second-line {
+  display: flex;
+  justify-content: center;
+}
+
+
+.circle {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 25px 20px;
+}
+
+.rectangle {
+  background-color: white;
+  width: 20px;
+  height: 100px;
+  margin: 25px 10px;
+}
+
+@keyframes dotSpin {
+    from {
+    transform: rotate(90deg);  }
+    to {
+      transform: rotate(180deg);
+    }
+}
+
+@keyframes bigSmall {
+  10% .second-line:first-child{
+    transform: scale(1.5); 
+  }
+  20% .second-line:first-child{
+    transform: scale(1);
+  }
+  30% .second-line:nth-child(2){
+    transform: scale(1.5);
+  }
+  40% .second-line:nth-child(2){
+    transform: scale(1);
+  }
+  50% .second-line:nth-child(3){
+    transform: scale(1.5);
+  }
+  60% .second-line:nth-child(3){
+    transform: scale(1);
+  }
+  70% .second-line:nth-child(4){
+    transform: scale(1.5);
+  }
+  80% .second-line:nth-child(4){
+    transform: scale(1);
+  }
+  90% .second-line:last-child{
+    transform: scale(1.5);
+  }
+  100% .second-line:last-child{
+    transform: scale(1);
+  }
+}
